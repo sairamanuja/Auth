@@ -10,9 +10,9 @@ This project provides a basic implementation of user authentication (signup and 
 
 - User registration and login with email and password.
 - Password hashing using bcrypt.
-- Email notifications for successful registration using Nodemailer.
+- OTP (One-Time Password) verification for secure authentication.
+- Email notifications for OTP and successful registration using Nodemailer.
 - MongoDB for storing user data.
-- JWT (JSON Web Token) for secure authentication.
 
 ## Prerequisites
 
@@ -43,5 +43,22 @@ JWTSECRET=<your-jwt-secret-key>
 PORT=<your-port-number>
 NODEMAIL_USER=<your-email-address>
 NODEMAIL_PASS=<your-email-password>
-    
+```
+
+ 
+### Technologies Used
+
+- **Node.js** - JavaScript runtime environment
+- **Express** - Web framework for Node.js
+- **MongoDB** - NoSQL database for storing user data
+- **Mongoose** - MongoDB object modeling for Node.js
+- **Nodemailer** - Module for sending emails
+- **bcrypt** - Library for hashing passwords
+- **JWT** - JSON Web Tokens for authentication
+   
+To start the server:
+
+```bash
+npm start
+```
  
